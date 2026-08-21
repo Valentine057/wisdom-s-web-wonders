@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Github, Twitter } from "lucide-react";
 import { Navbar } from "@/components/portfolio/Navbar";
 import { ContactForm } from "@/components/portfolio/ContactForm";
 import { PROFILE, SKILLS, PROJECTS, SERVICES } from "@/components/portfolio/data";
