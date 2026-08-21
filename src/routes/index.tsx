@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Github, Twitter } from "lucide-react";
 import { Navbar } from "@/components/portfolio/Navbar";
 import { ContactForm } from "@/components/portfolio/ContactForm";
 import { PROFILE, SKILLS, PROJECTS, SERVICES } from "@/components/portfolio/data";
@@ -26,14 +27,32 @@ function Index() {
 
       <main>
         {/* Hero */}
-        <section id="home" className="px-6 pt-40 pb-20">
+        <section id="home" className="px-6 pt-32 pb-20 sm:pt-40">
           <div className="reveal mx-auto max-w-7xl">
-            <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/10 px-3 py-1 font-mono text-xs text-primary">
-              <span className="relative flex h-2 w-2">
-                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-primary opacity-75" />
-                <span className="relative inline-flex h-2 w-2 rounded-full bg-primary" />
-              </span>
-              AVAILABLE FOR NEW PROJECTS
+            <div className="mb-8 flex items-center gap-6">
+              <div className="relative">
+                <div className="flex h-20 w-20 items-center justify-center overflow-hidden rounded-full border-2 border-primary/30 bg-surface-raised text-2xl font-bold text-primary sm:h-24 sm:w-24 sm:text-3xl">
+                  {PROFILE.photo ? (
+                    <img
+                      src={PROFILE.photo}
+                      alt={`${PROFILE.name} profile photo`}
+                      className="h-full w-full object-cover"
+                    />
+                  ) : (
+                    "WBJ"
+                  )}
+                </div>
+                <span className="absolute -bottom-1 -right-1 flex h-5 w-5 items-center justify-center rounded-full border-2 border-background bg-accent">
+                  <span className="h-2.5 w-2.5 rounded-full bg-accent-foreground" />
+                </span>
+              </div>
+              <div className="mb-6 inline-flex items-center gap-2 self-end rounded-full border border-primary/20 bg-primary/10 px-3 py-1 font-mono text-xs text-primary">
+                <span className="relative flex h-2 w-2">
+                  <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-primary opacity-75" />
+                  <span className="relative inline-flex h-2 w-2 rounded-full bg-primary" />
+                </span>
+                AVAILABLE FOR NEW PROJECTS
+              </div>
             </div>
             <h1 className="mb-8 text-5xl font-bold tracking-tight text-foreground sm:text-6xl md:text-8xl">
               Wisdom Bassey <span className="text-muted-foreground">Johnny</span>
