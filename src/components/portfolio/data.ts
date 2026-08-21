@@ -10,8 +10,11 @@ export const PROFILE = {
   location: "Nigeria (GMT+1)",
   github: "https://github.com/Valentine057",
   linkedin: "mailto:valentinejohnny@gmail.com",
+  twitter: "https://twitter.com/",
   whatsapp: "https://wa.me/2347060829220",
   tiktok: "https://www.tiktok.com/",
+  // Replace with your own photo by uploading an image to the project and updating this path.
+  photo: "",
 };
 
 export const SKILLS: { group: string; items: string[] }[] = [
