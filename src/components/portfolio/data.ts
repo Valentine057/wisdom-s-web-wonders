@@ -1,5 +1,6 @@
 import photoImg from "@/assets/photo.jpg.png";
 import flourImg from "@/assets/flour.jpg.png";
+import profilePhoto from "@/assets/profile-photo.jpg.png";
 
 export const PROFILE = {
   name: "Wisdom Bassey Johnny",
@@ -14,7 +15,7 @@ export const PROFILE = {
   whatsapp: "https://wa.me/2347060829220",
   tiktok: "https://www.tiktok.com/",
   // Replace with your own photo by uploading an image to the project and updating this path.
-  photo: "",
+  photo: profilePhoto,
 };
 
 export const SKILLS: { group: string; items: string[] }[] = [
@@ -63,5 +64,26 @@ export const SERVICES = [
   {
     title: "Database Development",
     body: "Data modelling, indexing, and caching for MySQL and MongoDB.",
+  },
+];
+
+export const EXPERIENCE = [
+  {
+    period: "March 2025 – Present",
+    title: "Advance Diploma in Software Engineer",
+    organization: "Aptech Computer Education",
+    description: "Studying advanced software engineering concepts and practical development.",
+  },
+  {
+    period: "March 2025 – Present",
+    title: "Full-Stack Developer",
+    organization: "Aptech Computer Education",
+    description: "Building full-stack web applications using modern frontend and backend tools.",
+  },
+  {
+    period: "March 2025 – Present",
+    title: "Self Employed",
+    organization: "Independent",
+    description: "Code and build something every day.",
   },
 ];

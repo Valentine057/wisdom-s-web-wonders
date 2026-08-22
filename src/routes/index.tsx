@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Github, Twitter } from "lucide-react";
 import { Navbar } from "@/components/portfolio/Navbar";
 import { ContactForm } from "@/components/portfolio/ContactForm";
-import { PROFILE, SKILLS, PROJECTS, SERVICES } from "@/components/portfolio/data";
+import { PROFILE, SKILLS, PROJECTS, SERVICES, EXPERIENCE} from "@/components/portfolio/data";
 
 const TITLE = "Wisdom Bassey Johnny — Full-Stack Developer";
 const DESCRIPTION =
@@ -152,6 +152,39 @@ function Index() {
         </section>
 
         {/* Projects */}
+        <section id="experience" className="border-t border-border bg-surface/50 py-24">
+  <div className="mx-auto max-w-7xl px-6">
+    <h2 className="mb-4 font-mono text-sm uppercase tracking-widest text-primary">
+      / Experience & Education
+    </h2>
+    <h3 className="mb-12 text-4xl font-bold tracking-tight text-foreground">
+      My Journey
+    </h3>
+
+    <div className="space-y-5">
+      {EXPERIENCE.map((item) => (
+        <article
+          key={item.title}
+          className="rounded-2xl border border-border bg-surface-raised p-7 transition-colors hover:border-primary/50"
+        >
+          <p className="mb-5 text-center font-mono text-sm font-semibold text-primary">
+            ({item.period})
+          </p>
+
+          <h4 className="mb-3 text-2xl font-bold uppercase text-foreground">
+            {item.title}
+          </h4>
+
+          <p className="mb-3 text-lg text-muted-foreground">
+            {item.organization}
+          </p>
+
+          <p className="text-muted-foreground">{item.description}</p>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>
         <section id="projects" className="border-t border-border py-24">
           <div className="mx-auto max-w-7xl px-6">
             <div className="mb-12">
