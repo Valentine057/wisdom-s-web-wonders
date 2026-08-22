@@ -1,5 +1,5 @@
-import nexusImg from "@/assets/photo.jpg";
-import swiftpayImg from "@/assets/flour.jpg";
+import photoImg from "@/assets/photo.jpg.png";
+import flourImg from "@/assets/flour.jpg.png";
 
 export const PROFILE = {
   name: "Wisdom Bassey Johnny",
@@ -27,7 +27,7 @@ export const SKILLS: { group: string; items: string[] }[] = [
 export const PROJECTS = [
   {
     name: "Flavor Bloom",
-    image: heroImage,
+    image: photoImg,
     description:
       "A responsive organic-spice storefront featuring product galleries, contact details, and an engaging customer experience.",
     tech: ["React", "TypeScript", "Tailwind CSS", "Vite"],
@@ -37,7 +37,7 @@ export const PROJECTS = [
   },
   {
     name: "Flour Mills Bloom",
-    image: flourMillsBloomMainImg,
+    image: flourImg,
     description:
       "A high-performance customer relationship tool built for distributed sales teams.",
     tech: ["React", "Django", "MySQL"],
