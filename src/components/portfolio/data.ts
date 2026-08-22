@@ -87,3 +87,21 @@ export const EXPERIENCE = [
     description: "Code and build something every day.",
   },
 ];
+
+export const EDUCATION = [
+  {
+    period: "2025 - Present",
+    title: "Advance Diploma in Software Engineer",
+    school: "Aptech Computer Education SGSU University",
+  },
+  {
+    period: "2010 - 2017",
+    title: "Secondary School Certificate",
+    school: "Divine International Academy",
+  },
+  {
+    period: "2017 - 2019",
+    title: "Diploma in Hardware Engineering",
+    school: "Sedulours Dianamic Ventures",
+  },
+];

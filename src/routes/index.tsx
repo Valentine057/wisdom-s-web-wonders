@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Github, Twitter } from "lucide-react";
 import { Navbar } from "@/components/portfolio/Navbar";
 import { ContactForm } from "@/components/portfolio/ContactForm";
-import { PROFILE, SKILLS, PROJECTS, SERVICES, EXPERIENCE} from "@/components/portfolio/data";
+import { PROFILE, SKILLS, PROJECTS, SERVICES, EXPERIENCE, EDUCATION} from "@/components/portfolio/data";
 
 const TITLE = "Wisdom Bassey Johnny — Full-Stack Developer";
 const DESCRIPTION =
@@ -150,12 +150,48 @@ function Index() {
             </div>
           </div>
         </section>
+<section id="education" className="border-t border-border bg-surface/50 py-24">
+          <div className="mx-auto max-w-5xl px-6">
+            <div className="mb-12">
+              <h2 className="inline-block rounded-lg bg-primary/10 px-6 py-3 text-2xl font-semibold text-foreground">
+                Educations
+              </h2>
+            </div>
 
-        {/* Projects */}
+            <div className="space-y-8">
+              {EDUCATION.map((item) => (
+                <article
+                  key={item.title}
+                  className="rounded-2xl border border-border bg-surface-raised p-7 shadow-[0_0_30px_rgba(139,92,246,0.12)] transition-colors hover:border-primary/50"
+                >
+                  <p className="mb-7 text-center font-mono font-semibold text-accent">
+                    {item.period}
+                  </p>
+
+                  <div className="flex items-center gap-6">
+                    <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-lg border-2 border-primary text-3xl text-primary">
+                      🎓
+                    </div>
+
+                    <div>
+                      <h3 className="mb-3 text-xl font-bold uppercase text-foreground sm:text-2xl">
+                        {item.title}
+                      </h3>
+                      <p className="text-lg text-muted-foreground">{item.school}</p>
+                    </div>
+                  </div>
+                </article>
+              ))}
+            </div>
+
+          </div>
+        </section>
+
+        {/* Experience */}
         <section id="experience" className="border-t border-border bg-surface/50 py-24">
   <div className="mx-auto max-w-7xl px-6">
     <h2 className="mb-4 font-mono text-sm uppercase tracking-widest text-primary">
-      / Experience & Education
+      / Experience
     </h2>
     <h3 className="mb-12 text-4xl font-bold tracking-tight text-foreground">
       My Journey
