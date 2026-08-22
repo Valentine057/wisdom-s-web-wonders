@@ -150,7 +150,10 @@ function Index() {
             </div>
           </div>
         </section>
-<section id="education" className="border-t border-border bg-surface/50 py-24">
+
+        {/* Projects */}
+
+        <section id="education" className="border-t border-border bg-surface/50 py-24">
           <div className="mx-auto max-w-5xl px-6">
             <div className="mb-12">
               <h2 className="inline-block rounded-lg bg-primary/10 px-6 py-3 text-2xl font-semibold text-foreground">
@@ -183,12 +186,9 @@ function Index() {
                 </article>
               ))}
             </div>
-
           </div>
-        </section>
-
-        {/* Experience */}
-        <section id="experience" className="border-t border-border bg-surface/50 py-24">
+        </section>    
+<section id="experience" className="border-t border-border bg-surface/50 py-24">
   <div className="mx-auto max-w-7xl px-6">
     <h2 className="mb-4 font-mono text-sm uppercase tracking-widest text-primary">
       / Experience
